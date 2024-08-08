@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lunar Loader</title>
+    <link rel="stylesheet" href="bulma.min.css" />
+</head>
+<body>
+    <div class="container has-text-centered mb-1">
+        <label class="title has-text-centered is-fullwidth">Lunar Loader</label>
+    </div>
+    <div class="container mb-3">
+        <div class="field">
+            <label class="label has-text-centered is-fullwidth">Made by Alreadycode</label>
+        </div>
+    </div>
+    <div class="container p-1 m-3">
+        <div class="field">
+            <label class="label">Loader Version: build 1.201-2 (V1.2)</label>
+            <label class="label">Info: Latest Pre-release Beta</label>
+        </div>
+    </div>
+    <div class="container p-1 m-3">
+        <div class="field">
+            <label class="label">Loader Status:</label>
+            <label class="tag is-success has-text-primary-100 is-size-6">Undetected</label>
+            <label class="tag is-danger has-text-primary-100 is-size-6" style="display:none">Detected</label>   
+        </div>
+    </div>
+    <div class="container p-1 m-3">
+        <div class="field">
+            <label class="label">Supported Scripts:</label>
+            <div class="select">
+                <select id="scriptSelection">
+                    <option value="lunar_run_hotpocket">Lunar hotpocket</option>
+                    <option value="lunar_run_sandstrikeio">sandstrike.io</option>
+                    <option value="lunar_run_infcraft">neal.fun</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="container p-3 mb-1">
+        <button class="button is-link is-fullwidth" id="injectButton">Inject</button>
+    </div>
+</body>
+</html>
