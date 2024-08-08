@@ -8,4 +8,7 @@ I'm going to update as frequently as possible thanks for using Lunar Loader!
 Lunar Loader is still currently in BETA and pre-release.
 
 # We are not responsible for your use
-Do not use Lunar Loader for production, I Alreadycode am not liable for any damages Lunar Loader has caused.
+Do not use Lunar Loader for production, I (Alreadycode) am not liable for any damages Lunar Loader has caused.
+
+# Do not distribute without proper permission from me
+You must not distribute any forks of Lunar Loader without my permission.
