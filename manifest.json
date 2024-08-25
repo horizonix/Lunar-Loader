@@ -4,7 +4,8 @@
     "description": "Client for IO Games and websites! Made by Alreadycode!",
     "version": "1.5",
     "action": {
-        "default_popup": "popup/keycheck.html"
+        "default_popup": "popup/keycheck.html",
+        "popup_1": "popup/popup.html"
     },
     "icons": {
         "16": "images/icon-16.png",
