@@ -1,14 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lunar Loader</title>
     <link rel="stylesheet" href="bulma.min.css" />
 </head>
+
 <body>
     <div class="container has-text-centered mb-1">
         <label class="title has-text-centered is-fullwidth">Lunar Loader</label>
+    </div>
+    <div id="update_client" class="modal is-active p-3">
+        <div class="modal-background"></div>
+        <div class="modal-card">
+            <header class="modal-card-head">
+                <p class="modal-card-title">Update</p>
+            </header>
+            <section class="modal-card-body">
+                <p class="text has-text-primary-100">A new update has been released, please install the new update by clicking the update button below!</p>
+                <div class="p-1"></div>
+                <p class="text has-text-primary-100">Not updating could result in issues inside the extension which could lead to the extension no longer working.</p>
+                <div class="p-1"></div>
+                <p class="text has-text-primary-100">Please click the update button below and then delete this chrome extension and follow the instructions inside of the extract_me.zip file like you did with this one.</p>
+            </section>
+            <footer class="modal-card-foot">
+                <div class="buttons">
+                    <button id="updateButton" class="button is-success has-text-primary-100">Update</button>
+                </div>
+            </footer>
+        </div>
     </div>
     <div class="container mb-3">
         <div class="field">
@@ -17,7 +39,7 @@
     </div>
     <div class="container p-1 m-3">
         <div class="field">
-            <label class="label">Loader Version: build 1.201-2 (V1.2)</label>
+            <label class="label">Loader Version: build 1.312-2 (V1.3)</label>
             <label class="label">Info: Latest Pre-release Beta</label>
         </div>
     </div>
@@ -25,7 +47,7 @@
         <div class="field">
             <label class="label">Loader Status:</label>
             <label class="tag is-success has-text-primary-100 is-size-6">Undetected</label>
-            <label class="tag is-danger has-text-primary-100 is-size-6" style="display:none">Detected</label>   
+            <label class="tag is-danger has-text-primary-100 is-size-6" style="display:none">Detected</label>
         </div>
     </div>
     <div class="container p-1 m-3">
@@ -41,7 +63,11 @@
         </div>
     </div>
     <div class="container p-3 mb-1">
-        <button class="button is-link is-fullwidth" id="injectButton">Inject</button>
+        <button class="button is-danger has-text-primary-100" id="logoutButton">Logout</button>
+        <label class="label">*  Close</label>
+    </div>
+    <div class="container p-3 mb-1">
+        <button class="button is-link has-text-primary-100 is-fullwidth" id="injectButton">Inject</button>
     </div>
 </body>
 </html>
